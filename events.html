@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Selection Form</title>
+        <link rel="stylesheet" href="events.css">
+    </head>
+    <body>
+        <div class="info-form">
+            <form>
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="type">Select occasion</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="baby shower">Baby Shower</option>
+                    <option value="fets">Fests</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="festivals">Festivals</option>
+                </select>
+                <label for="period">Duration(in days)</label>
+                <input type="text" name="period" placeholder="Type period">
+                <label for="Quantity">Quantity</label>
+                <input type="text" name="period" placeholder="Mention number of sets">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="priceField" readonly>
+                <label for="loc">Location</label>
+                <input type="text" name="loc" placeholder="Type location">
+                <label for="payment">Payment</label>
+                <select id="Quantity">
+                    <option value="Quantity">Choose Payment</option>
+                    <option value="1">Online</option>
+                    <option value="2">Offline</option>
+                </select>
+                <!--<input type="submit" value="ORDER NOW">-->
+                <input type="button" id="myButton" value="BUY NOW">
+
+
+            </form>
+        </div>
+
+        <div class="box-container">
+           <div class="category">
+               <img src="wedding.jpg">
+                <h3>wedding ceremony decorations</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="fests.jpg">
+                <h3>Fests decorations</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="birthday.jpg">
+                <h3>Birthday party decorations</h3>
+                <a href="birthday.html">view details</a>
+            </div>
+            <div class="category">
+                <img src="baby_shower.webp">
+                <h3>Baby shower decorations</h3>
+                <a href="">view details</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+        <script>
+            // JavaScript to set the default value for the "Price" field
+            document.addEventListener('DOMContentLoaded', function () {
+                var priceField = document.getElementById('priceField');
+                priceField.value = '50,000/- per day';
+            });
+            document.getElementById("myButton").addEventListener("click", function() {
+            // Replace 'your_link_here' with the URL you want to navigate to
+                 window.location.href = 'payment.html';
+            });
+    </script>
+        </script>
+    </body>
+</html>

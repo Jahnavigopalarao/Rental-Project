@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Selection Form</title>
+        <link rel="stylesheet" href="events.css">
+    </head>
+    <body>
+        <div class="info-form">
+            <form>
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="type">Select required equipment</option>
+                    <option value="folding">Folding wheelchair</option>
+                    <option value="oxygen">Oxygen concentrator</option>
+                    <option value="BIPAP">BIPAP machine</option>
+                    <option value="hospital">Hospital bed</option>
+                    <option value="suction">Suction machine</option>
+                    <option value="syringe">Syringe pump</option>
+                    <option value="patient">Patient monitor</option>
+                </select>
+                <label for="period">Duration(in days)</label>
+                <input type="text" name="period" placeholder="Type period">
+                <label for="Quantity">Quantity</label>
+                <input type="text" name="period" placeholder="Mention number of sets">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="priceField" readonly>
+                <label for="loc">Location</label>
+                <input type="text" name="loc" placeholder="Type location">
+                <label for="payment">Payment</label>
+                <select id="Quantity">
+                    <option value="Quantity">Choose Payment</option>
+                    <option value="1">Online</option>
+                    <option value="2">Offline</option>
+                </select>
+                <input type="submit" value="ORDER NOW">
+            </form>
+        </div>
+
+        <div class="box-container">
+           <div class="category">
+               <img src="bipap.jpg">
+                <h3>BIPAP machine</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="oxygen.jpg">
+                <h3>Oxygen concentrator</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="wheelchair.webp">
+                <h3>Folding wheelchair</h3>
+                <a href="wheelchair.html">view details</a>
+            </div>
+            <div class="category">
+                <img src="syrange.jpg">
+                <h3>Syringe pump</h3>
+                <a href="">view details</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+        <script>
+            // JavaScript to set the default value for the "Price" field
+            document.addEventListener('DOMContentLoaded', function () {
+                var priceField = document.getElementById('priceField');
+                priceField.value = '4000/- per day';
+            });
+        </script>
+    </body>
+</html>

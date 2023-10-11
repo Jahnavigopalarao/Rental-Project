@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-sarif;
+    transition: 0.5s;
+}
+
+body{
+    background: #d7f7ff;
+}
+
+h1{
+    color: #ff3399;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.category{
+    width: 320px;
+    height: 500px;
+    background: #AFEEEE; 
+    border-radius: 20px;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+}
+.category img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2% ease;
+    border: 2px solid #ff3399; /* Border style and color */
+    padding: 5px; /* Padding to create space between the image and the border */
+    margin: 10px; 
+    /*width: 48%; /* Set a width for each image to fit side by side */
+    /*max-width: 100%; /* Ensure images don't exceed their container */
+    /*height: auto;*/
+}
+.category img:hover{
+    transform: scale(1.04);
+}
+.category h3{
+    padding: 30px;
+    text-align: center;   
+}
+.category button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #ff3399;
+    color: cyan;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.2s all;
+}
+.category button:hover{
+    transform: scale(1.04);
+}
+.container{
+    width: 100%;
+    padding:15px 0;
+    height: 100vh;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: #fff;
+    width: 600px;
+    height: 55px;
+    left: 50%;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    border-radius: 25px;
+    margin-top: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.box {
+    background-color: #00ffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+form button{
+    background: tomato;
+    padding: 10px 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
+}
+button a {
+    color:#fff; /* Change to your desired text color, e.g., red (#ff0000) */
+    text-decoration: none; /* Remove underline from the link text */
+}
+button a:active {
+    color: #66ccff; /* Change to the desired text color when clicked */
+}

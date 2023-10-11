@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Selection Form</title>
+        <link rel="stylesheet" href="events.css">
+    </head>
+    <body>
+        <div class="info-form">
+            <form>
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="type">Select type of camping</option>
+                    <option value="tent">Tent camping</option>
+                    <option value="backpacking">Backpacking/Hiking camping</option>
+                    <option value="car">Car camping</option>
+                    <option value="van">RV/Van camping</option>
+                    <option value="bicycle">Bicycle Touring camping</option>
+                    <option value="survival">Survival camping</option>
+                    <option value="winter">Winter camping</option>
+                </select>
+                <label for="period">Duration(in days)</label>
+                <input type="text" name="period" placeholder="Type period">
+                <label for="Quantity">Quantity</label>
+                <input type="text" name="period" placeholder="Mention number of sets">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="priceField" readonly>
+                <label for="loc">Location</label>
+                <input type="text" name="loc" placeholder="Type location">
+                <label for="payment">Payment</label>
+                <select id="Quantity">
+                    <option value="Quantity">Choose Payment</option>
+                    <option value="1">Online</option>
+                    <option value="2">Offline</option>
+                </select>
+                <input type="submit" value="ORDER NOW">
+            </form>
+        </div>
+
+        <div class="box-container">
+           <div class="category">
+               <img src="tent-camping.jpg">
+                <h3>Tent camping</h3>
+                <a href="tent.html">view details</a>
+            </div>
+            <div class="category">
+                <img src="car_camping.jpg">
+                <h3>Car camping</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="bicycle_compaign.jpg">
+                <h3>Bicycle Touring camping</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="winter_camping.jpg">
+                <h3>Winter camping</h3>
+                <a href="">view details</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+        <script>
+            // JavaScript to set the default value for the "Price" field
+            document.addEventListener('DOMContentLoaded', function () {
+                var priceField = document.getElementById('priceField');
+                priceField.value = '10,000/- per day';
+            });
+        </script>
+    </body>
+</html>

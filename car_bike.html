@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Selection Form</title>
+        <link rel="stylesheet" href="events.css">
+    </head>
+    <body>
+        <div class="info-form">
+            <form>
+                <label for="type">Car Type</label>
+                <select id="type">
+                    <option value="type">Select car type</option>
+                    <option value="suziki">Economy(Suziki Swift)</option>
+                    <option value="toyata">Compact(Toyata Corolla)</option>
+                    <option value="KIA">Intermediate(KIA Cerato)</option>
+                    <option value="Hyundai">Standard(Hyundai Elantra)</option>
+                    <option value="premium">Premium(Holden SV6)</option>
+                    <option value="full-size">Full-size(Toyota Camry)</option>
+                    <option value="luxury">Luxury(Holden Caprice V8)</option>
+                </select>
+                <label for="typ">Bike Type</label>
+                <select id="typ">
+                    <option value="typ">Select bike type</option>
+                    <option value="Tandem">Tandem Bike</option>
+                    <option value="sports">Cruiser bike</option>
+                    <option value="hire">Hire bike</option>
+                    <option value="recumbent">BMX bike</option>
+                    <option value="cargo">Cargo bike</option>
+                    <option value="mountain">Mountain bike </option>
+                </select>
+                <label for="period">Duration(in days)</label>
+                <input type="text" name="period" placeholder="Type period">
+                <label for="Quantity">Quantity</label>
+                <input type="text" name="period" placeholder="Mention number of sets">
+                <label for="price">Car Price</label>
+                <input type="text" name="price" id="priceField" readonly>
+                <label for="price">Bike Price</label>
+                <input type="text" name="price" id="priceFields" readonly>
+                <label for="loc">Location</label>
+                <input type="text" name="loc" placeholder="Type location">
+                <label for="payment">Payment</label>
+                <select id="Quantity">
+                    <option value="Quantity">Choose Payment</option>
+                    <option value="1">Online</option>
+                    <option value="2">Offline</option>
+                </select>
+                <input type="submit" value="ORDER NOW">
+            </form>
+        </div>
+
+        <div class="box-container">
+           <div class="category">
+               <img src="cruiser.webp">
+                <h3>Cruiser bike</h3>
+                <a href="bike.html">view details</a>
+            </div>
+            <div class="category">
+                <img src="bmx_bike.jpg">
+                <h3>BMX bike</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="holden.jpg">
+                <h3>Holden Caprice V8</h3>
+                <a href="">view details</a>
+            </div>
+            <div class="category">
+                <img src="suziki.webp">
+                <h3>Suziki Swift</h3>
+                <a href="">view details</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+        <script>
+            // JavaScript to set the default value for the "Price" field
+            document.addEventListener('DOMContentLoaded', function () {
+                var priceField = document.getElementById('priceField');
+                priceField.value = '20,000/- per day';
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var priceField = document.getElementById('priceFields');
+                priceField.value = '10,000/- per day';
+            });
+        </script>
+    </body>
+</html>
